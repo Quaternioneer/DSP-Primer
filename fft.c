@@ -107,7 +107,7 @@ if (verbose>=2)
     printf("%6.4lf ", ai[i]);
    printf("\n"); }
 
-fprintf(fdata,"Hz     magnitude     dB\n");
+fprintf(fdata,"*f_s    magnitude     dB\n");
 for(i=0; i<N; i++)
  { mag = sqrt(ar[i]*ar[i]+ai[i]*ai[i]);
 fprintf(fdata,"%6.4lf %le %lf\n",(double)i/(double)N, mag, dB(mag));}
